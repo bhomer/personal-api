@@ -13,6 +13,7 @@ app.get('/location', function(req, res) {
 app.get('/hobbies', function(req, res) {
     res.type('application/json');
     res.send({hobbies: 'Sports, Exercise'})
+    req.param
 });
 app.get('/occupations', function(req, res) {
     res.type('application/json');
@@ -38,9 +39,6 @@ app.get('/', function(req, res) {
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.send(JSON.stringify(messages));
 });
-
-app.get('/', function(req, res) {
-    res.type('
 
 //app.post('/', function(req, res) {
 //    console.log(req.body);
